@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7B16CE6C212B361800A4356A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE6B212B361800A4356A /* main.swift */; };
+		7B16CE74212B367600A4356A /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE73212B367600A4356A /* InputManager.swift */; };
+		7B16CE76212B369400A4356A /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE75212B369400A4356A /* Battle.swift */; };
+		7B16CE78212B36A300A4356A /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE77212B36A300A4356A /* Setup.swift */; };
+		7B16CE7B212B36C000A4356A /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE7A212B36C000A4356A /* Actor.swift */; };
+		7B16CE7D212B36CB00A4356A /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE7C212B36CB00A4356A /* Enemy.swift */; };
+		7B16CE7F212B36D600A4356A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE7E212B36D600A4356A /* Player.swift */; };
+		7B16CE82212B36EC00A4356A /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE81212B36EC00A4356A /* Armor.swift */; };
+		7B16CE84212B36F300A4356A /* Helmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE83212B36F300A4356A /* Helmet.swift */; };
+		7B16CE86212B36FF00A4356A /* Chestplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE85212B36FF00A4356A /* Chestplate.swift */; };
+		7B16CE88212B370900A4356A /* Greaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE87212B370900A4356A /* Greaves.swift */; };
+		7B16CE8A212B372000A4356A /* RandomEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE89212B372000A4356A /* RandomEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,17 @@
 /* Begin PBXFileReference section */
 		7B16CE68212B361800A4356A /* RPG-Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RPG-Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B16CE6B212B361800A4356A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7B16CE73212B367600A4356A /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		7B16CE75212B369400A4356A /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		7B16CE77212B36A300A4356A /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		7B16CE7A212B36C000A4356A /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		7B16CE7C212B36CB00A4356A /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		7B16CE7E212B36D600A4356A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7B16CE81212B36EC00A4356A /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		7B16CE83212B36F300A4356A /* Helmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helmet.swift; sourceTree = "<group>"; };
+		7B16CE85212B36FF00A4356A /* Chestplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chestplate.swift; sourceTree = "<group>"; };
+		7B16CE87212B370900A4356A /* Greaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greaves.swift; sourceTree = "<group>"; };
+		7B16CE89212B372000A4356A /* RandomEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +79,36 @@
 		7B16CE6A212B361800A4356A /* RPG-Game */ = {
 			isa = PBXGroup;
 			children = (
+				7B16CE89212B372000A4356A /* RandomEvents.swift */,
 				7B16CE6B212B361800A4356A /* main.swift */,
+				7B16CE73212B367600A4356A /* InputManager.swift */,
+				7B16CE75212B369400A4356A /* Battle.swift */,
+				7B16CE77212B36A300A4356A /* Setup.swift */,
+				7B16CE79212B36AA00A4356A /* Objects */,
 			);
 			path = "RPG-Game";
+			sourceTree = "<group>";
+		};
+		7B16CE79212B36AA00A4356A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7B16CE7A212B36C000A4356A /* Actor.swift */,
+				7B16CE7C212B36CB00A4356A /* Enemy.swift */,
+				7B16CE7E212B36D600A4356A /* Player.swift */,
+				7B16CE80212B36DB00A4356A /* Armor */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		7B16CE80212B36DB00A4356A /* Armor */ = {
+			isa = PBXGroup;
+			children = (
+				7B16CE81212B36EC00A4356A /* Armor.swift */,
+				7B16CE83212B36F300A4356A /* Helmet.swift */,
+				7B16CE85212B36FF00A4356A /* Chestplate.swift */,
+				7B16CE87212B370900A4356A /* Greaves.swift */,
+			);
+			path = Armor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +168,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B16CE74212B367600A4356A /* InputManager.swift in Sources */,
 				7B16CE6C212B361800A4356A /* main.swift in Sources */,
+				7B16CE88212B370900A4356A /* Greaves.swift in Sources */,
+				7B16CE7D212B36CB00A4356A /* Enemy.swift in Sources */,
+				7B16CE76212B369400A4356A /* Battle.swift in Sources */,
+				7B16CE7F212B36D600A4356A /* Player.swift in Sources */,
+				7B16CE78212B36A300A4356A /* Setup.swift in Sources */,
+				7B16CE86212B36FF00A4356A /* Chestplate.swift in Sources */,
+				7B16CE7B212B36C000A4356A /* Actor.swift in Sources */,
+				7B16CE82212B36EC00A4356A /* Armor.swift in Sources */,
+				7B16CE84212B36F300A4356A /* Helmet.swift in Sources */,
+				7B16CE8A212B372000A4356A /* RandomEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
