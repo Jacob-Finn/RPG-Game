@@ -18,9 +18,9 @@ class Battle {
                 2. Defend
                 3. Use Inventory item
                 4. Run
-                *Note, Only 1 is implemented currently!*
+                *Note, Only 1 & 2 are implemented currently!*
                 """)
-        repeat
+while !player.dead && !enemy.dead
         {
             repeat
             {
@@ -54,10 +54,13 @@ class Battle {
             }
             playerCombatTurnEnded = false
         }
-            while !player.dead && !enemy.dead // fight until one is dead
         if enemy.dead
         {
             print("You have succesfully defeated the \(enemy.name)")
+        }
+        if player.dead
+        {
+            print("The hero has fallen!")
         }
         
     }

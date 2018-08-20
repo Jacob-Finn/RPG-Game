@@ -10,9 +10,14 @@ import Foundation
 private var eventChosen = -1
 class RandomEvents
 {
+    static func Death()
+    {
+        
+    }
+    
     static func randomNumberGenerator(maxNumber: Int) -> Int {
         let limit = UInt32(maxNumber)
-        return Int(arc4random_uniform(limit)) + 1
+        return Int(arc4random_uniform(limit + 1)) + 1
     }
     static func ForestEvent()
     {

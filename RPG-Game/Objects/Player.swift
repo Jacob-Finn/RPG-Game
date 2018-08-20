@@ -55,9 +55,13 @@ class Player {
             print("Your defence is raised! You have increased armor till the next attack!")
             self.defence = (defence / 2)
         }
-        if self.health <= 0 {
-            print("You have died! Game over!")
-            return
+        if self.health < 0
+        {
+            self.health = 0
+        }
+        if self.health == 0 {
+            RandomEvents.Death()
+            self.dead = true
         }
     }
     func defend()
@@ -78,6 +82,12 @@ class Player {
         else
         {
             target.takeDamage(damageDealt: (self.strength - target.defence))
+        }
+    }
+    func addHealth(healthToAdd: Int) {
+            self.health += healthToAdd
+        if  self.health > 100 {
+            self.health = 100
         }
     }
     
