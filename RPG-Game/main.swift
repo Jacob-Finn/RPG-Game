@@ -44,11 +44,14 @@ repeat
      playerOne.addHealth(healthToAdd: 10)
     }
 }
-    while  !playerOne.dead
+    while  !playerOne.dead && playerOne.level > 3
 if playerOne.dead
 {
     print("The town mourns the death of a hero.")
 }
-
+if playerOne.level > 3
+{
+    print("\n\n\n\n\nYou're entering an area of the game that hasn't been developed! So you've won so far.")
+}
 
 
