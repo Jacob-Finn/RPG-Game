@@ -7,8 +7,11 @@
 //
 
 import Foundation
+var requiredXP = 0
 private var defenceRaised = false
 class Player {
+    var level: Int
+    var experience: Int
     var abilityActive: Bool
     var health: Int
     var strength: Int
@@ -22,9 +25,11 @@ class Player {
     var greaves: Greaves
     var defence: Int
     var dead: Bool
-    
-    init(health: Int, coins: Double, name: String, monstersKilled: Int, chestplate: Chestplate, helmet: Helmet, greaves: Greaves, defence: Int, strength: Int, agility: Int, intelligence: Int, dead: Bool, abilityActive: Bool)
+     // Player should technically inherit from Actor, but since I made enemies later and Actors later. They don't, soooooo.... Oh well.
+    init(health: Int, coins: Double, name: String, monstersKilled: Int, chestplate: Chestplate, helmet: Helmet, greaves: Greaves, defence: Int, strength: Int, agility: Int, intelligence: Int, dead: Bool, abilityActive: Bool, experience: Int, level: Int)
     {
+        self.experience = experience
+        self.level = level
         self.abilityActive = abilityActive
         self.dead = dead
         self.health = health
@@ -38,6 +43,8 @@ class Player {
         self.agility = agility
         self.intelligence = intelligence
         self.strength = strength
+        requiredXP = self.level * 10
+        
     }
     func subtractCoins(coinsToSubtract: Double)  {
         self.coins -= coinsToSubtract
@@ -90,6 +97,35 @@ class Player {
             self.health = 100
         }
     }
+    func increaseXP(xpGained: Int)
+    {
+        self.experience += xpGained
+        if self.experience >= requiredXP {
+            levelUp()
+        }
+        else
+        {
+            return
+        }
+    }
+    
+    func levelUp ()
+    {
+        if self.level > 11 {
+            self.experience = 0
+            print("You're at the max level!")
+        }
+        else
+        {
+            self.experience = 0
+            self.level += 1
+            print("You leveled up to level \(self.level)!")
+            requiredXP = self.level * 10
+        }
+
+    }
+    
+    
     
 }
 

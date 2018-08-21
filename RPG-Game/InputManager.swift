@@ -39,6 +39,8 @@ class InputManager  {
                 }else if userInput == "stats"
                 {
                     print("Health: \(playerOne.health)")
+                    print("Level: \(playerOne.level)")
+                    print("Experience: \(playerOne.experience)/\(requiredXP)")
                     print("Strength: \(playerOne.strength)")
                     print("Agility: \(playerOne.agility)")
                     print("Intelligence: \(playerOne.intelligence)")

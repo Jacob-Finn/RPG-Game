@@ -19,6 +19,7 @@
 		7B16CE86212B36FF00A4356A /* Chestplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE85212B36FF00A4356A /* Chestplate.swift */; };
 		7B16CE88212B370900A4356A /* Greaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE87212B370900A4356A /* Greaves.swift */; };
 		7B16CE8A212B372000A4356A /* RandomEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B16CE89212B372000A4356A /* RandomEvents.swift */; };
+		7BC2A6D9212C9882006B1AD5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A6D8212C9882006B1AD5 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		7B16CE85212B36FF00A4356A /* Chestplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chestplate.swift; sourceTree = "<group>"; };
 		7B16CE87212B370900A4356A /* Greaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greaves.swift; sourceTree = "<group>"; };
 		7B16CE89212B372000A4356A /* RandomEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEvents.swift; sourceTree = "<group>"; };
+		7BC2A6D8212C9882006B1AD5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7B16CE80212B36DB00A4356A /* Armor */ = {
 			isa = PBXGroup;
 			children = (
+				7BC2A6D8212C9882006B1AD5 /* Item.swift */,
 				7B16CE81212B36EC00A4356A /* Armor.swift */,
 				7B16CE83212B36F300A4356A /* Helmet.swift */,
 				7B16CE85212B36FF00A4356A /* Chestplate.swift */,
@@ -175,6 +178,7 @@
 				7B16CE76212B369400A4356A /* Battle.swift in Sources */,
 				7B16CE7F212B36D600A4356A /* Player.swift in Sources */,
 				7B16CE78212B36A300A4356A /* Setup.swift in Sources */,
+				7BC2A6D9212C9882006B1AD5 /* Item.swift in Sources */,
 				7B16CE86212B36FF00A4356A /* Chestplate.swift in Sources */,
 				7B16CE7B212B36C000A4356A /* Actor.swift in Sources */,
 				7B16CE82212B36EC00A4356A /* Armor.swift in Sources */,

@@ -27,7 +27,7 @@ class RandomEvents
         }else if eventChosen == 2 {
             print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
             print("An enemy goblin appears! You better get ready for a fight!")
-            let goblin = Enemy(health: 50, name: "Goblin", defence: 1, damage: 5, dead: false)
+            let goblin = Enemy(health: 50, name: "Goblin", defence: 1, damage: 5, dead: false, experienceGained: 5)
             Battle.startBattle(player: playerOne, enemy: goblin)
         }
         else if eventChosen == 3 {

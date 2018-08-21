@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Armor {
+class Armor : Item {
     var armor: Int
     var name: String
     var requiredStrength: Int

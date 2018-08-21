@@ -35,12 +35,12 @@ repeat
     playerchoice = InputManager.playerInput(numberOfChoices: 3)
     if playerchoice == 1
     {
-        print("This feature has not yet been implemented!")
+        print("This feature has not yet been implemented!\n")
     }else if playerchoice == 2{
         RandomEvents.ForestEvent()
     }else if playerchoice == 3
     {
-     print("You rest for awhile, restoring some HP.")
+     print("You rest for awhile, restoring some HP.\n")
      playerOne.addHealth(healthToAdd: 10)
     }
 }

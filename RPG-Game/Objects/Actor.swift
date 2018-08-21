@@ -15,7 +15,7 @@ class Actor {
     var dead: Bool
     
     
-    init(health: Int, name: String, defence: Int, damage: Int, dead: Bool)
+    public init(health: Int, name: String, defence: Int, damage: Int, dead: Bool)
     {
         self.dead = dead
         self.health = health
