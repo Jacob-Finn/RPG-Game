@@ -73,16 +73,19 @@ class InputManager  {
                             {
                                 playerOne.strength += 1
                                 playerOne.statPoints -= 1
+                                print("You added strength! You now have \(playerOne.statPoints) stat points left!")
                             }
                             if choice == 2
                             {
                                 playerOne.agility += 1
                                 playerOne.statPoints -= 1
+                                print("You added Agility! You now have \(playerOne.statPoints) stat points left!")
                             }
                             if choice == 3
                             {
                                 playerOne.intelligence += 1
                                 playerOne.statPoints -= 1
+                                print("You added Intelligence! You now have \(playerOne.statPoints) stat points left!")
                             }
                         }
                             while playerOne.statPoints != 0
