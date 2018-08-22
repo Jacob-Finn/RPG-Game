@@ -41,6 +41,10 @@ class InputManager  {
                     print("Health: \(playerOne.health)")
                     print("Level: \(playerOne.level)")
                     print("Experience: \(playerOne.experience)/\(requiredXP)")
+                    if playerOne.statPoints != 0
+                    {
+                        print("Available stat points: \(playerOne.statPoints)")
+                    }
                     print("Strength: \(playerOne.strength)")
                     print("Agility: \(playerOne.agility)")
                     print("Intelligence: \(playerOne.intelligence)")
@@ -54,19 +58,51 @@ class InputManager  {
                         inventory
                         stats
                         """)
+                }else if userInput == "level up"
+                {
+                    if playerOne.statPoints != 0
+                    {
+                        print("You are leveling up! Please use the corresponding number in order to increase your stats!")
+                        print("1. Strength")
+                        print("2. Agility")
+                        print("3. Intelligence")
+                        repeat
+                        {
+                            let choice = playerInput(numberOfChoices: 3)
+                            if choice == 1
+                            {
+                                playerOne.strength += 1
+                                playerOne.statPoints -= 1
+                            }
+                            if choice == 2
+                            {
+                                playerOne.agility += 1
+                                playerOne.statPoints -= 1
+                            }
+                            if choice == 3
+                            {
+                                playerOne.intelligence += 1
+                                playerOne.statPoints -= 1
+                            }
+                        }
+                            while playerOne.statPoints != 0
+                        }else {
+                            print("You don't need to level up!")
+                        }
+                        
+                    }
+                    else {
+                        print("Not a valid selection!")
+                        continue
+                    }
                 }
-                else {
-                    print("Not a valid selection!")
-                    continue
-                }
+                
             }
-            
-        }
             while !selectionMade
-        
-        
-        return -5 // an error return
-    }
+            
+            
+            return -5 // an error return
+        }
 }
 
 

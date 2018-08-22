@@ -104,7 +104,7 @@ func StartingTheSetup() -> Player
     } while !madeSelection
     sleep(4)
     
-    return Player(health: 100, coins: startingMoney, name: startingName, monstersKilled: 0, chestplate: noChestplate, helmet: noHelmet, greaves: noGreaves, defence: 0, strength: 5, agility: 5, intelligence: 5, dead: false, abilityActive: false, experience: 0, level: 1)
+    return Player(health: 100, coins: startingMoney, name: startingName, monstersKilled: 0, chestplate: noChestplate, helmet: noHelmet, greaves: noGreaves, defence: 0, strength: 5, agility: 5, intelligence: 5, dead: false, abilityActive: false, experience: 0, level: 1, statPoints: 0)
     
     
     

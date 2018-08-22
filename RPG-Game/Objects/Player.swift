@@ -10,6 +10,7 @@ import Foundation
 var requiredXP = 0
 private var defenceRaised = false
 class Player {
+    var statPoints: Int
     var level: Int
     var experience: Int
     var abilityActive: Bool
@@ -26,8 +27,9 @@ class Player {
     var defence: Int
     var dead: Bool
      // Player should technically inherit from Actor, but since I made enemies later and Actors later. They don't, soooooo.... Oh well.
-    init(health: Int, coins: Double, name: String, monstersKilled: Int, chestplate: Chestplate, helmet: Helmet, greaves: Greaves, defence: Int, strength: Int, agility: Int, intelligence: Int, dead: Bool, abilityActive: Bool, experience: Int, level: Int)
+    init(health: Int, coins: Double, name: String, monstersKilled: Int, chestplate: Chestplate, helmet: Helmet, greaves: Greaves, defence: Int, strength: Int, agility: Int, intelligence: Int, dead: Bool, abilityActive: Bool, experience: Int, level: Int, statPoints: Int)
     {
+        self.statPoints = statPoints
         self.experience = experience
         self.level = level
         self.abilityActive = abilityActive
@@ -117,9 +119,10 @@ class Player {
         }
         else
         {
+            self.statPoints += 5
             self.experience = 0
             self.level += 1
-            print("You leveled up to level \(self.level)!")
+            print("You leveled up to level \(self.level)!\nTo spend your stat points type 'level up'")
             requiredXP = self.level * 10
         }
 
